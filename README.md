@@ -18,8 +18,9 @@ Welcome to the github action crash course playgroung! The aim of this repository
 
 ### 2. Create a composite action 
 1. Remove the `.tmp` extension from `challenge_2.yml.tmp`
-2. Modify workflow from `/.github/workflows/challenge_2.yml` to call composite action `hello_world_composite.yml`
-3. Run succesfully `challenge_2.yml` workflow using act `act -j "hello_world_composite"`
+2. Change the access permissions of the goodby script: `chmod +x goodbye.sh`
+3. Modify workflow from `/.github/workflows/challenge_2.yml` to call composite action `hello_world_composite.yml`
+4. Run succesfully `challenge_2.yml` workflow using act `act -j "hello_world_composite"`
 
 See https://docs.github.com/en/actions/creating-actions/about-custom-actions#composite-actions
 
